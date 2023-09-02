@@ -11,6 +11,7 @@
          
             font-size: 50px;
             font-family: Arial, Helvetica, sans-serif;
+              background-color: rgba(192, 189, 189, 0.801);
         }
         span{
             color: green;
@@ -19,6 +20,24 @@
          cursor: text;
          cursor: left;
         }
+       header{
+
+        display: block;
+       }
+
+       h2{
+      
+        text-decoration: underline;
+       }
+       input{
+        background-color: white;
+       }
+      
+       .paragraph{
+        column-count: 2;
+        column-gap: 13px;
+       }
+
 
     </style>
 </head>
@@ -31,17 +50,20 @@
 <br>
     <div class="checkbox">
     <label>Male</label>
-    <input type="checkbox" >
+    <input type="checkbox" required>
     <label>Female</label>
-    <input type="checkbox" >
+    <input type="checkbox" required>
     <br><br>
     <label>Age Range</label>
     <br><br>
     <label>18-30</label>
-    <input type="checkbox" >
+    <input type="checkbox" required>
     <label>30-70</label>
-    <input type="checkbox" >
+    <input type="checkbox" required>
 </div>
+    <br>
+
+
     <br>
     <form id="submissionForm" action="process.php" method="post">
         <label for="name">Name and Surname</label><br>
@@ -59,9 +81,18 @@
         <label for="text">What is the biggest problem in your community?</label><br>
         <input type="text" id="text"  required style="width: 700px; height: 15vh;">
         <br>
+        <label for="text">Signature </label><br>
+        <input type="text" id="text"  required style="width: 200px; height: 3vh;">
+        <br>
      
         <br>
-        <input type="submit" value="Submit">
+        <div class="button" id="#button" >
+        <input type="submit" placeholder=""
+         style="border-radius: 
+         50px;padding-bottom: 0; background-color: rgb(40, 194, 40); color: black;">
+    </div>
     </form>
+
+
 </body>
 </html>
